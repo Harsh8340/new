@@ -1,0 +1,143 @@
+/* TweetBox.css */
+
+.tweetbox {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem; /* Reduced padding for a smaller size */
+    background-color: #f7f9fa; /* Light background color */
+  }
+  
+  .tweetbox__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 320px; /* Reduced maximum width for a smaller box */
+    padding: 0.2rem; /* Reduced padding for a smaller size */
+  }
+  
+  .tweetbox__form-field {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff; /* White background color */
+    border: 1px solid #e1e8ed; /* Light gray border */
+    border-radius: 10px;
+    padding: 0.8rem; /* Reduced padding for a smaller size */
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+  }
+  
+  /* Adjust border color on hover for smaller screens */
+  @media (max-width: 600px) {
+    .tweetbox__form-field:hover {
+      border-color: #1da1f2; /* Twitter blue border on hover */
+    }
+  }
+  
+  .tweetbox__icons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem; /* Reduced margin for a smaller size */
+  }
+  
+  .tweetbox__icons button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .tweetbox__icons button:hover {
+    color: #1da1f2; /* Twitter blue color on hover */
+  }
+  
+  .tweetbox__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem; /* Reduced margin for a smaller size */
+  }
+  
+  .tweetbox__charcount {
+    color: #888888; /* Gray text for character count */
+  }
+  
+  .tweetbox__charcount.error {
+    color: #ff4f42; /* Red text for character count when exceeded */
+  }
+  
+  .tweetbox__charcount.error:before {
+    content: '❗'; /* Red exclamation mark icon before the character count */
+    margin-right: 0.2rem;
+  }
+  
+  .tweetbox__charcount.error:after {
+    content: 'Characters Exceeded'; /* Error message after the character count */
+    font-size: 0.9rem;
+  }
+  
+  .tweetbox__charcount.success {
+    color: #1da1f2; /* Twitter blue color for character count within limit */
+  }
+  
+  /* Style the Tweet button */
+  .tweetbox__tweet-button {
+    background-color: #1da1f2;
+    color: #ffffff;
+    border: none;
+    border-radius: 9999px;
+    padding: 0.4rem 1rem; /* Reduced padding for a smaller size */
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .tweetbox__tweet-button:hover {
+    background-color: #1990d6; /* Slightly darker blue on hover */
+  }
+  
+  /* Dark mode */
+  .tweetbox--dark {
+    background-color: #121212; /* Dark background color */
+    color: #ffffff;
+  }
+  
+  .tweetbox--dark .tweetbox__form-field {
+    background-color: #1a1a1a; /* Dark gray background color */
+    border-color: #444444; /* Dark gray border color */
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2); /* Dark box shadow */
+  }
+  
+  .tweetbox--dark .tweetbox__icons button:hover {
+    color: #1da1f2; /* Twitter blue color on hover */
+  }
+  
+  .tweetbox--dark .tweetbox__charcount {
+    color: #aaaaaa; /* Light gray text color for character count */
+  }
+  
+  .tweetbox--dark .tweetbox__charcount.error {
+    color: #ff4f42; /* Red text for character count when exceeded */
+  }
+  
+  .tweetbox--dark .tweetbox__charcount.error:before {
+    content: '❗'; /* Red exclamation mark icon before the character count */
+    margin-right: 0.2rem;
+  }
+  
+  .tweetbox--dark .tweetbox__charcount.error:after {
+    content: 'Characters Exceeded'; /* Error message after the character count */
+    font-size: 0.9rem;
+  }
+  
+  .tweetbox--dark .tweetbox__charcount.success {
+    color: #1da1f2; /* Twitter blue color for character count within limit */
+  }
+  
+  .tweetbox--dark .tweetbox__tweet-button {
+    background-color: #1da1f2;
+    color: #ffffff;
+  }
+  
+  .tweetbox--dark .tweetbox__tweet-button:hover {
+    background-color: #1990d6; /* Slightly darker blue on hover */
+  }
+  

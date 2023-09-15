@@ -1,0 +1,5 @@
+.widgets {
+    flex: 0.3;
+    height: 100vh;
+    position: fixed;
+}
