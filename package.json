@@ -1,0 +1,29 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "twitter clone api",
+  "main": "app.js",
+  "scripts": {
+
+    "start": "babel-node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "harsh",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "^3.12.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "graphql": "^16.8.0",
+    "helmet": "^7.0.0",
+    "mongoose": "^7.5.1",
+    "morgan": "^1.10.0",
+    "nanoid": "^5.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.19",
+    "@babel/node": "^7.22.19",
+    "@babel/preset-env": "^7.22.15"
+  }
+}
